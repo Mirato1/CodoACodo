@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Formulario Web</h2>
+        <form class="contact-form">
+            <legend>Envíanos tus comentarios</legend>
+
+            <!-- type text para poder validar que sea entre 7 y 8 carácteres -->
+            <input type="text" name="dni" placeholder="DNI" title="DNI sólo acepta mínimo 7 y máximo 8 carácteres"
+                pattern="^[0-9]{7,8}" required>
+
+            <input type="email" name="email" placeholder="Ingrese Email" title="Email incorrecto"
+                pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$"
+                required>
+
+            <input type="password" name="password" placeholder="Contraseña" title="La contraseña es requerida y debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
+NO puede tener otros símbolos." pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" required>
+
+            <legend>Ingresar</legend>
+            <input type="submit">
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Sitio hecho por Lucas Giménez.</p>
+    </footer>
+</body>
+
+</html>

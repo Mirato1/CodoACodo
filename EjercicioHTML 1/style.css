@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(68, 0, 112, 0.8631827731092436) 37%,
+    rgba(4, 0, 255, 0.7259278711484594) 100%
+  );
+  color: #ffe500;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-decoration: underline;
+  /*font-weight: bold;*/
+  font-size: 3rem;
+  padding-top: 10%;
+}
+
+h2 {
+  text-decoration: wavy;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  padding: 30px 0;
+  color: #00bfff;
+  transition: all 0.3s ease;
+}
+
+h3:hover {
+  color: rgb(0, 255, 242);
+}
+
+.list__ingredientes {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.list__procedimiento {
+  list-style: none;
+  font-size: 1.3rem;
+}

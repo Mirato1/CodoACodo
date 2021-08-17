@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fbfcef;
+  color: #000000;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 94.2vh;
+    text-align: center;
+}
+
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+
+.contact-form> * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact-form textarea{
+  resize: none;
+}
+
+.contact-form legend,
+.contact-form-response{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea{
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.contact-form input[type="submit"]{
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form *::placeholder{
+  color: #000;
+}
+
+/* Footer */
+.footer{
+    background-color: #212121;
+    color: #D3FBD8;
+    text-align: center;
+    font-weight: 400;
+    padding: 0.1rem;
+    width: 100vw;
+    min-width: 320px;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer p{
+    font-size: 1rem;
+}
